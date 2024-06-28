@@ -19,6 +19,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight.Companion.Bold
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
@@ -68,7 +70,12 @@ fun MyApp(){
 
 @Composable
 private fun TextResult(s: String) {
-    Text(text = s, fontSize = 30.sp, fontWeight = Bold)
+    Text(text = s ,
+        fontSize = 30.sp,
+        fontWeight = Bold,
+        fontFamily = FontFamily(Font(R.font.bnazanin))
+    )
+
 }
 
 
